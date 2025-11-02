@@ -71,6 +71,7 @@ export default class RedBlackTree {
     let current = this.root;
     
     while (current) {
+      this.addStep(`Visiting node ${current.value}`, null, current.value);
       parent = current;
       if (value < current.value) current = current.left;
       else if (value > current.value) current = current.right;
