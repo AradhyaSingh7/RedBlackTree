@@ -1,12 +1,5 @@
 @import "tailwindcss";
-@keyframes glow-node {
-  0% { filter: drop-shadow(0 0 0px #38bdf8); }
-  50% { filter: drop-shadow(0 0 12px #38bdf8); }
-  100% { filter: drop-shadow(0 0 0px #38bdf8); }
-}
-
-
 .glow-node {
-  animation: glow-node 1.2s ease-in-out infinite alternate;
+  filter: drop-shadow(0 0 10px #38bdf8);
+  transition: filter 0.3s ease-in-out;
 }
-
