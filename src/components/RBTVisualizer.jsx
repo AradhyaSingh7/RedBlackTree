@@ -4,6 +4,8 @@ import ControlPanel from './ControlPanel';
 import StepControls from './StepControls';
 import TreeCanvas from './TreeCanvas';
 import RulesSection from './RulesSection';
+import RulePopups from './RulePopups';
+
 
 export default function RBTVisualizer() {
   const [tree] = useState(() => new RedBlackTree());
@@ -91,6 +93,7 @@ export default function RBTVisualizer() {
         </div>
 
         <TreeCanvas currentTree={currentTree} highlightValue={steps[currentStep]?.highlightValue}/>
+        <RulePopups />
         <RulesSection />
       </div>
     </div>
